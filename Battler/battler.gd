@@ -17,6 +17,8 @@ extends Node2D
 
 @export var master: int = 0
 
+var list_skill = []
+
 func _to_string():
 	#print("-", name_battler, "-")
 	#print("heal:", heal, "/", maxHeal)

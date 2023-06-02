@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dj2cgui15a2a4"]
+
+[ext_resource type="Script" path="res://Battler/skill.gd" id="1_x3n8o"]
+
+[node name="skill" type="Node2D"]
+script = ExtResource("1_x3n8o")
