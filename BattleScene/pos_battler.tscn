@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://c68wft1i7ujxg"]
+
+[ext_resource type="Script" path="res://BattleScene/pos_battler.gd" id="1_ttq0v"]
+
+[node name="pos_battler" type="Marker2D"]
+script = ExtResource("1_ttq0v")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -32.0
+offset_top = -19.0
+offset_right = 15.0
+offset_bottom = 7.0
+scale = Vector2(1.36, 1.36)
+text = "..."
+horizontal_alignment = 1

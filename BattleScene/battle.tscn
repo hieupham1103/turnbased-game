@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsdwekiws007a"]
+
+[ext_resource type="Script" path="res://BattleScene/battle.gd" id="1_ep4oj"]
+[ext_resource type="Texture2D" uid="uid://r75mn5cm0f5w" path="res://Asset/Dungeon Backgrounds/dungeon background 3.png" id="2_b1q52"]
+[ext_resource type="PackedScene" uid="uid://c68wft1i7ujxg" path="res://BattleScene/pos_battler.tscn" id="3_7n85m"]
+
+[node name="battle" type="Node2D"]
+position = Vector2(119, 85)
+scale = Vector2(0.78, 0.78)
+script = ExtResource("1_ep4oj")
+
+[node name="background" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(591, 338)
+texture = ExtResource("2_b1q52")
+
+[node name="player" type="Node2D" parent="."]
+position = Vector2(93.5897, 293.59)
+
+[node name="player_pos0" parent="player" instance=ExtResource("3_7n85m")]
+position = Vector2(235.897, 150)
+
+[node name="player_pos1" parent="player" instance=ExtResource("3_7n85m")]
+position = Vector2(111.538, 10.2564)
+
+[node name="player_pos2" parent="player" instance=ExtResource("3_7n85m")]
+position = Vector2(-2.56407, 147.436)
+
+[node name="player_pos3" parent="player" instance=ExtResource("3_7n85m")]
+position = Vector2(-115.385, 11.5385)
+
+[node name="enemy" type="Node2D" parent="."]
+position = Vector2(992.307, 325.641)
+
+[node name="enemy_pos0" parent="enemy" instance=ExtResource("3_7n85m")]
+position = Vector2(-176.923, 115.385)
+
+[node name="enemy_pos1" parent="enemy" instance=ExtResource("3_7n85m")]
+position = Vector2(-71.7947, -29.4871)
+
+[node name="enemy_pos2" parent="enemy" instance=ExtResource("3_7n85m")]
+position = Vector2(24.3591, 112.821)
+
+[node name="enemy_pos3" parent="enemy" instance=ExtResource("3_7n85m")]
+position = Vector2(176.923, -30.7692)

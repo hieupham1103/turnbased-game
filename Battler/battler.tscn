@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://cot81cig5ih2j"]
+
+[ext_resource type="Script" path="res://Battler/battler.gd" id="1_hyb6k"]
+
+[node name="battler" type="Node2D"]
+scale = Vector2(1.18867, 0.110005)
+script = ExtResource("1_hyb6k")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -69.8257
+offset_top = -363.618
+offset_right = -29.8257
+offset_bottom = -337.618
+scale = Vector2(3.56788, 23.1817)
+text = "none"
